@@ -49,7 +49,7 @@ jobs:
           username: ${{ secrets.QA_USER }}
           key: ${{ secrets.QA_SSH_KEY }}
           script: |
-            cd ~/csc424-final-exam
+            cd ~/csc424-final-exam-joseph
             git pull origin main
             docker compose -f docker-compose.qa.yml pull
             docker compose -f docker-compose.qa.yml up -d
